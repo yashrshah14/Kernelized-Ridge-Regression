@@ -10,14 +10,10 @@ from math import sqrt
 dataset=pd.read_csv("C:\Users\Yash\Downloads")
 dataset["BIAS"]=1
 X=dataset.values
-#X=sklearn.preprocessing.normalize(dataset)
-#print(X)
 response=pd.read_csv("C:\Users\Yash\Downloads")
-#Y=sklearn.preprocessing.normalize(response)
 Y=response.values
 X=X[0:800,:]
 Y=Y[0:800,:]
-#Y=np.ravel(Y)
 X=np.asmatrix(X)
 Y=np.asmatrix(Y)
 print(X[0])
